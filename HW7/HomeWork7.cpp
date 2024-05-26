@@ -8,7 +8,6 @@ int main()
 	int DrawCount = 0;
 	int WinCount = 0;
 	int LossCount = 0;
-	int GeneratedChoice;
 	char PlayerChoice;
 
 	// Providing seed for rand
@@ -30,74 +29,29 @@ int main()
 				<< " \t r - rock \t p - paper \t s - scissors: ";
 			std::cin >> PlayerChoice;
 
-			// Generated choice 0 = r, 1 = p, 2 = s
-			GeneratedChoice = rand() % 3;
-
-			if (PlayerChoice == 'r')
+			if (PlayerChoice == 'r' || PlayerChoice == 'p' || PlayerChoice == 's')
 			{
-				std::cout << "Your choice is R" << std::endl;
-
-				if (GeneratedChoice == 0)
+				char GeneratedChoice[] = {'r', 'p', 's'};
+				int Index = rand() % 3;
+				std::cout << "PC choice is " << GeneratedChoice[Index] << std::endl;
+				// p - 112 r - 114 s - 115
+				if (PlayerChoice == GeneratedChoice[Index])
 				{
-					std::cout << "PC choice is R" << std::endl;
 					std::cout << "It's DRAW" << std::endl;
 					DrawCount++;
 				}
-				else if (GeneratedChoice == 1)
+				// Win(2,1,-3) Lose(3,-2,-1)
+				else if (GeneratedChoice[Index] - PlayerChoice != 3
+					&& GeneratedChoice[Index] - PlayerChoice != -1
+					&& GeneratedChoice[Index] - PlayerChoice != -2)
 				{
-					std::cout << "PC choice is P" << std::endl;
-					std::cout << "You LOST" << std::endl;
-					LossCount++;
-				}
-				else 
-				{
-					std::cout << "PC choice is S" << std::endl;
-					std::cout << "You WIN" << std::endl;
-					WinCount++;
-				}
-			}
-			else if (PlayerChoice == 'p')
-			{
-				std::cout << "Your choice is P" << std::endl;
-				if (GeneratedChoice == 0)
-				{
-					std::cout << "PC choice is R" << std::endl;
-					std::cout << "You WIN" << std::endl;
-					WinCount++;
-				}
-				else if (GeneratedChoice == 1)
-				{
-					std::cout << "PC choice is P" << std::endl;
-					std::cout << "It's DRAW" << std::endl;
-					DrawCount++;
-				}
-				else
-				{
-					std::cout << "PC choice is S" << std::endl;
-					std::cout << "You LOST" << std::endl;
-					LossCount++;
-				}
-			}
-			else if (PlayerChoice == 's')
-			{
-				std::cout << "Your choice is S" << std::endl;
-				if (GeneratedChoice == 0)
-				{
-					std::cout << "PC choice is R" << std::endl;
-					std::cout << "You LOST" << std::endl;
-					LossCount++;
-				}
-				else if (GeneratedChoice == 1)
-				{
-					std::cout << "PC choice is P" << std::endl;
 					std::cout << "You WIN" << std::endl;
 					WinCount++;
 				}
 				else
 				{
-					std::cout << "PC choice is S" << std::endl;
-					std::cout << "It's DRAW" << std::endl;
-					DrawCount++;
+					std::cout << "You LOST" << std::endl;
+					LossCount++;
 				}
 			}
 			else
@@ -105,6 +59,7 @@ int main()
 				std::cout << "You entered wrong symbol!" << std::endl;
 				i--;
 			}
+			
 		}
 		std::cout
 			<< "Thanks for playing. Your final stats:" << std::endl
