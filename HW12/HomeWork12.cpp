@@ -1,7 +1,7 @@
 #include <iostream>
 
 // Task 1
-void BubbleSort(int Arr[],int Size)
+void BubbleSort(int Arr[], int Size)
 {
 	for (int i = 0; i < Size - 1; i++)
 	{
@@ -17,18 +17,17 @@ void BubbleSort(int Arr[],int Size)
 
 
 // Task 2
-
 enum class sorting_direction
 {
-	ByRows,ByColumns
+	ByRows, ByColumns
 };
-const int Rows = 2;
+const int Rows = 3;
 const int Columns = 4;
 
-int Partition(int Arr[],int Low, int High)
+
+int Partition(int Arr[], int Low, int High)
 {
 	int Pivot = Arr[High];
-
 	int i = Low - 1;
 
 	for (int j = Low; j <= High; j++)
@@ -39,6 +38,7 @@ int Partition(int Arr[],int Low, int High)
 			std::swap(Arr[i], Arr[j]);
 		}
 	}
+
 	std::swap(Arr[i + 1], Arr[High]);
 	return i + 1;
 }
@@ -63,12 +63,12 @@ void Sort(int Arr[Rows][Columns], sorting_direction Direction)
 			int Column[Rows];
 			for (int j = 0; j < Rows; j++)
 			{
-				Column[j] = Arr[i][j];
+				Column[j] = Arr[j][i];
 			}
 			QuickSort(Column, 0, Rows - 1);
 			for (int j = 0; j < Rows; j++)
 			{
-				Arr[i][j] = Column[j];
+				Arr[j][i] = Column[j];
 			}
 		}
 	}
@@ -79,5 +79,21 @@ void Sort(int Arr[Rows][Columns], sorting_direction Direction)
 		{
 			QuickSort(Arr[i], 0, Columns - 1);
 		}
+	}
+}
+
+
+int main()
+{
+	int SomeArray[Rows][Columns] = { {19,-1,20,3}, {12,10,15,5}, {12,0,20,39} };
+	Sort(SomeArray, sorting_direction::ByColumns);
+	std::cout << "SomeArray:" << std::endl;
+	for (int i = 0; i < Rows; i++)
+	{
+		for (int j = 0; j < Columns; j++)
+		{
+			std::cout << SomeArray[i][j] << " ";
+		}
+		std::cout << std::endl;
 	}
 }
