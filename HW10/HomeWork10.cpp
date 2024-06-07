@@ -18,7 +18,6 @@ void Swap(int* a, int* b)
 // Task 2
 bool CalculateSum(double* Arr, int ArrSize, double& Sum)
 {
-	//double* ArrIndex = Arr;
 	if (ArrSize > 0)
 	{
 		for (int i = 0; i < ArrSize / sizeof(double); i++)
@@ -28,25 +27,19 @@ bool CalculateSum(double* Arr, int ArrSize, double& Sum)
 		}
 		return true;
 	}
-	else
-	{
-		return false;
-	}
+	return false;
 }
 
 //Task 3
-
 bool Find(int* Arr, int ArrSize, int Elem)
 {
-
 	for (int i = 0; i < ArrSize / sizeof(int); i++)
 	{
 		if (*Arr == Elem)
 		{
-				return true;
+			return true;
 		}
-			Arr++;
+		Arr++;
 	}
-
 	return false;
 }
