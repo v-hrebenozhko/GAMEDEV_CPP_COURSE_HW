@@ -67,31 +67,31 @@ Otherwise, it returns false.
 
 ## CodingGame screenshots
 
-[CodingGames screenshot 1](https://ibb.co/P1jNmGw)
+![CodingGames screenshot 1](https://i.ibb.co/c231ghD/2024-06-12-104227.png)
 
-[CodingGames screenshot 2](https://ibb.co/L6Np78r)
+![CodingGames screenshot 2](https://i.ibb.co/hHY8zyc/2024-06-12-104309.png)
 
-[CodingGames screenshot 3](https://ibb.co/D8rT97f)
+![CodingGames screenshot 3](https://i.ibb.co/vQXR3J4/2024-06-12-104338.png)
 
 ---
 
 ## Test examples screenshots
 
-![Test examples screenshot 1](https://ibb.co/wcf98Vv)
+![Test examples screenshot 1](https://i.ibb.co/z6zyCpk/2024-06-12-105230.png)
 
-![Test examples screenshot 2](https://ibb.co/7nZzGzC)
+![Test examples screenshot 2](https://i.ibb.co/StMxKxy/2024-06-12-105330.png)
 
-![Test examples screenshot 3](https://ibb.co/QnwSnRH)
+![Test examples screenshot 3](https://i.ibb.co/k0Cb0fD/2024-06-12-105515.png)
 
-![Test examples screenshot 4](https://ibb.co/pv1Spr7)
+![Test examples screenshot 4](https://i.ibb.co/vxcS8vF/2024-06-12-105539.png)
 
 ## Test cases screenshots
 
 Test case "Hello"
-![Test cases screenshots 1](https://ibb.co/NKZ1f3V)
+![Test cases screenshots 1](https://i.ibb.co/KWFNBG0/2024-06-12-104651.png)
 
 Test case "Cocon"
-![Test cases screenshots 2](https://ibb.co/RznHSyC)
+![Test cases screenshots 2](https://i.ibb.co/72cyz4G/2024-06-12-104822.png)
 
 Test case "Speak"
-![Test cases screenshots 3](https://ibb.co/kcBL7LV)
+![Test cases screenshots 3](https://i.ibb.co/88syCyn/2024-06-12-105009.png)
