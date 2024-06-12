@@ -67,11 +67,11 @@ Otherwise, it returns false.
 
 ## CodingGame screenshots
 
-![CodingGames screenshot 1](https://ibb.co/P1jNmGw)
+[CodingGames screenshot 1](https://ibb.co/P1jNmGw)
 
-![CodingGames screenshot 2](https://ibb.co/L6Np78r)
+[CodingGames screenshot 2](https://ibb.co/L6Np78r)
 
-![CodingGames screenshot 3](https://ibb.co/D8rT97f)
+[CodingGames screenshot 3](https://ibb.co/D8rT97f)
 
 ---
 
