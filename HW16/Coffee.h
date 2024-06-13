@@ -33,6 +33,7 @@ private:
 	coffee** m_Orders;
 public:
 	coffee_shop(std::string Name, int TableCount);
+	~coffee_shop();
 	int TakePlace();
 	void Order(int TableNumber);
 	bool Prepare(int TableNumber);

@@ -68,6 +68,12 @@ coffee_shop::coffee_shop(std::string Name, int TablesAmount)
 	m_Orders = new coffee*[m_TablesAmount]{};
 }
 
+coffee_shop::~coffee_shop()
+{
+	delete[] m_TablesCount;
+	delete[] m_Orders;
+}
+
 // Task 4
 
 int coffee_shop::TakePlace()
