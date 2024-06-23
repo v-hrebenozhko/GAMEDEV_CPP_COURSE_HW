@@ -1,7 +1,4 @@
 #include "coffee_shop.h"
-#include "Rectangle.h"
-#include "Vector2d.h"
-
 
 
 int main()
