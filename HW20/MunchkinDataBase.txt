@@ -1,0 +1,16 @@
+Modifier;SimpleModifier;3;
+Modifier;SimpleModifier;1;
+Modifier;SimpleModifier;2;
+Modifier;SimpleModifier;3;
+Modifier;SimpleModifier;4;
+Modifier;SimpleModifier;5;
+Modifier;SimpleModifier;3;
+Modifier;SimpleModifier;2;
+Modifier;SimpleModifier;1;
+Modifier;SimpleModifier;3;
+Modifier;DoubleMunchkinPower;
+Modifier;DoubleMunchkinPower;
+Modifier;DoubleMunchkinPower;
+UndeadWeapon;Stinky Knife;3;
+GodWeapon;The sword of DOOM;5;
+Weapon;Spear;2;
