@@ -27,7 +27,6 @@ void handleSystemEvents(sf::RenderWindow& window,GameStateManager& gameStateMana
         }
         case sf::Event::KeyPressed:
             if (event.key.code == sf::Keyboard::Key::Escape)
-                //window.close();
         default:
             break;
         }

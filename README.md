@@ -1,1 +1,1 @@
-# GAMEDEV_CPP_COURSE_HW
+#pragma once
