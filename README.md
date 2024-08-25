@@ -125,4 +125,4 @@ Save and Load System:
 
 ## Gameplay Video
 
-![Gameplay Video](https://drive.google.com/file/d/1nyivcEbsQyjBCkedAdV_jZ3yYV_aEUYU/view?usp=drive_link)
+![Gameplay Video](https://youtu.be/W5msmxVSq0E)
