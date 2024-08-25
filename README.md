@@ -1,7 +1,3 @@
-# Wordle
-
-> Simple console game written in c++
-
 ### Table of Contents
 
 - [Game Title, Genre and Theme](#Game Title, Genre and Theme)
